@@ -44,7 +44,7 @@ class WebGatewayProvider implements ServiceProviderInterface
         }
 
         $web->get('/', 'OpenCFP\Http\Controller\PagesController::showHomepage')->bind('homepage');
-        $web->get('/ideas', 'OpenCFP\Http\Controller\PagesController::showTalkIdeas')->bind('talk_ideas');
+        $web->get('/speaker-agreement', 'OpenCFP\Http\Controller\PagesController::showSpeakerAgreement')->bind('speaker_agreement');
 
         // User Dashboard
         $web->get('/dashboard', 'OpenCFP\Http\Controller\DashboardController::showSpeakerProfile')->bind('dashboard');

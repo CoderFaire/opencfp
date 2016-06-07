@@ -11,9 +11,9 @@ class PagesController extends BaseController
         return $this->render('home.twig', $this->getContextWithTalksCount());
     }
 
-    public function showTalkIdeas()
+    public function showSpeakerAgreement()
     {
-        return $this->render('ideas.twig', $this->getContextWithTalksCount());
+        return $this->render('speaker-agreement.twig', $this->getContextWithTalksCount());
     }
 
     private function getContextWithTalksCount()
