@@ -116,18 +116,20 @@ class TalkSubmission
     private function isValidCategory($category)
     {
         return in_array($category, [
-            'development',
-            'framework',
+            'bestpractices',
+            'clientside',
             'database',
-            'testing',
-            'security',
+            'desktop',
             'devops',
-            'api',
-            'javascript',
-            'uiux',
+            'infrastructure',
+            'iot',
+            'maker',
+            'mobile',
+            'security',
+            'serverside',
+            'testingqa',
+            'uxui',
             'other',
-            'continuousdelivery',
-            'ibmi',
         ]);
     }
 }
