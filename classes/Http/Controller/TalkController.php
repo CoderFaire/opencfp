@@ -422,6 +422,7 @@ class TalkController extends BaseController
             'title' => $this->app->config('application.title'),
             'talk' => $talk->title,
             'enddate' => $this->app->config('application.enddate'),
+            'reply_to' => $this->app->config('application.reply_to'),
         ];
 
         try {
@@ -432,6 +433,9 @@ class TalkController extends BaseController
             $message->setFrom(
                 $template->renderBlock('from', $parameters),
                 $template->renderBlock('from_name', $parameters)
+            );
+            $message->setReplyTo(
+                $template->renderBlock('reply_to', $parameters)
             );
 
             $message->setSubject($template->renderBlock('subject', $parameters));

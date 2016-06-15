@@ -2,6 +2,7 @@ application:
   title: OpenCFP
   url: http://cfp.dev
   email: contact@openconf.com
+  reply_to: contact@openconf.com
   eventurl: http://myenvent.com
   event_location: Miami, FL
   enddate: Oct. 14th, 2016
