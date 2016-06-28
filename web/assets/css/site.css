@@ -3,6 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   padding: 5.5rem 0;
+  color: #444;
 }
 
 a {
@@ -18,8 +19,8 @@ a:hover {
 }
 
 .header {
-  background: #2e3192;
-  color: #FFF;
+  background-color: rgba(46,49,146,0.15);
+  color: #444;
   padding: 6rem 0;
 }
 
@@ -47,8 +48,8 @@ a:hover {
 }
 
 .section--primary {
-  background: #2e3192;
-  color: #FFF;
+  background-color: rgba(46,49,146,0.15);
+  color: #444;
 }
 
 .section--primary a {
@@ -57,11 +58,11 @@ a:hover {
 
 .section--light {
   background: #EEE;
-  color: #7e8690;
+  color: #777;
 }
 
 .headline {
-  margin: 0.75rem 0;
+  margin: 2.5rem 0;
   padding: 0.5rem 0;
   font-family: "Dosis", sans-serif;
 }
@@ -77,6 +78,10 @@ a:hover {
 
 .headline--centered {
   text-align: center;
+}
+
+.section--light .headline, header .headline {
+    margin: 0.75rem 0;
 }
 
 /**
@@ -144,16 +149,17 @@ a:hover {
  */
 .btn-opencfp--primary {
   background: #FFF;
-  color: #2e3192;
+  color: #444;
+  font-weight: 400;
 }
 
 .btn-opencfp--primary:hover {
   background: #F7F7F7;
-  color: #2e3192;
+  color: #444;
 }
 
 .btn-opencfp--light {
-  background: #7e8690;
+  background: #777;
   color: #FFF;
 }
 
@@ -165,12 +171,13 @@ a:hover {
 .btn-opencfp--outlined {
   background: transparent;
   border-color: #FFF;
-  color: #FFF;
+  color: #444;
+  font-weight: 400;
 }
 
 .btn-opencfp--outlined:hover {
-  background: #FFF;
-  color: #2e3192;
+  background: #F7F7F7;
+  color: #444;
 }
 
 .btn-opencfp--centered {
@@ -388,7 +395,7 @@ a:hover {
 }
 
 .navbar-opencfp {
-  background: #374146;
+  background: #fff;
 }
 
 .navbar-collapse {
@@ -398,7 +405,7 @@ a:hover {
 .navbar-opencfp .navbar-nav > li > a,
 .navbar-opencfp .navbar-nav .dropdown-menu > li > a{
   border-top: 3px solid transparent;
-  color: #FFF;
+  color: #444;
   -webkit-transition: border .2s ease-in-out;
 }
 
@@ -413,7 +420,7 @@ a:hover {
 .navbar-opencfp .nav .open>a:focus
 {
   background: none;
-  border-color: #2e3192;
+  border-color: #444;
 }
 
 .navbar-opencfp .navbar-toggle {
@@ -460,4 +467,8 @@ a:hover {
 .icon-12 {
   height: 12px;
   width: 12px;
+}
+
+#CoderFaireText {
+    fill: #444;
 }
