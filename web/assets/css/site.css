@@ -52,10 +52,6 @@ a:hover {
   color: #444;
 }
 
-.section--primary a {
-    color: currentColor;
-}
-
 .section--light {
   background: #EEE;
   color: #777;
